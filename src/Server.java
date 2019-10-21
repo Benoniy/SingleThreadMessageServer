@@ -6,6 +6,7 @@ import java.nio.ByteBuffer;
 import java.nio.channels.*;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.Scanner;
 import java.util.Set;
 
 public class Server {
@@ -16,7 +17,11 @@ public class Server {
     @SuppressWarnings("unused")
     public Server() throws IOException, InterruptedException {
         InetAddress hostIp = InetAddress.getLocalHost();
-        int port = 7777;
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Port: ");
+        int port = input.nextInt();
+        input.close();
 
         Selector selector = Selector.open();
         ServerSocketChannel ssChannel = ServerSocketChannel.open();
