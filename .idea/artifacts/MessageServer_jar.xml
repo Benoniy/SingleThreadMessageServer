@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="MessageServer:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/MessageServer_jar</output-path>
+    <root id="archive" name="MessageServer.jar">
+      <element id="module-output" name="SingleThreadMessageServer" />
+    </root>
+  </artifact>
+</component>
